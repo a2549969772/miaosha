@@ -3,7 +3,9 @@ package com.imooc.miaosha.controller;
 import com.imooc.miaosha.domain.MiaoshaUser;
 import com.imooc.miaosha.domain.User;
 import com.imooc.miaosha.redis.RedisService;
+import com.imooc.miaosha.service.GoodsService;
 import com.imooc.miaosha.service.MiaoshaUserService;
+import com.imooc.miaosha.vo.GoodsVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 @Controller
 @RequestMapping("/goods")
@@ -24,6 +27,8 @@ public class GoodsController {
     RedisService redisService;
     @Autowired
     MiaoshaUserService miaoshaUserService;
+    @Autowired
+    GoodsService goodsService;
 
     //    @RequestMapping("/to_list")
 //    public String list(HttpServletResponse response, Model model, @CookieValue(value = MiaoshaUserService.COOKIE_NAME_TOKEN, required = false) String cookieToken,
@@ -39,6 +44,9 @@ public class GoodsController {
     @RequestMapping("/to_list")
     public String list(Model model, MiaoshaUser miaoshaUser) {
         model.addAttribute("user", miaoshaUser);
+        //查询商品列表
+        List<GoodsVo> goodsVos=goodsService.listGoodsVo();
+        model.addAttribute("goodsList",goodsVos);
         return "goods_list";
     }
 
