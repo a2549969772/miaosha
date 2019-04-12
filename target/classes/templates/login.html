@@ -1,27 +1,29 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-
-
 <head>
     <title>登录</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <!-- jquery -->
-    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}" href="../static/js/jquery.min.js" ></script>
     <!-- bootstrap -->
-    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}" />
-    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}" href="../static/bootstrap/css/bootstrap.min.css" />
+
+
+    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}" href="../static/bootstrap/js/bootstrap.min.js"></script>
     <!-- jquery-validator -->
-    <script type="text/javascript" th:src="@{/jquery-validation/jquery.validate.min.js}"></script>
-    <script type="text/javascript" th:src="@{/jquery-validation/localization/messages_zh.min.js}"></script>
+    <script type="text/javascript" th:src="@{/jquery-validation/jquery.validate.min.js}" href="../static/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" th:src="@{/jquery-validation/localization/messages_zh.min.js}" href="../static/jquery-validation/localization/messages_zh.min.js"></script>
     <!-- layer -->
-    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>
+    <script type="text/javascript" th:src="@{/layer/layer.js}" href="../static/layer/layer.js"></script>
     <!-- md5.js -->
-    <script type="text/javascript" th:src="@{/js/md5.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/md5.min.js}" href="../static/js/md5.min.js"></script>
     <!-- common.js -->
-    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}" href="../static/js/common.js"></script>
 
 </head>
 <body>
+
 <form name="loginForm" id="loginForm" method="post"  style="width:50%; margin:0 auto">
 
     <h2 style="text-align:center; margin-bottom: 20px">用户登录</h2>
@@ -95,5 +97,4 @@
         });
     }
 </script>
-
 </html>
