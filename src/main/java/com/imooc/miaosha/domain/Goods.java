@@ -5,6 +5,15 @@ public class Goods {
     private String goodsName;
     private String goodsTitle;
     private String goodsImg;
+
+    public String getGoodsImg() {
+        return goodsImg;
+    }
+
+    public void setGoodsImg(String goodsImg) {
+        this.goodsImg = goodsImg;
+    }
+
     private String goodsDetail;
     private  Double goodsPrice;
     private  Integer goodsStock;
@@ -33,13 +42,7 @@ public class Goods {
         this.goodsTitle = goodsTitle;
     }
 
-    public String getGoodssImg() {
-        return goodsImg;
-    }
 
-    public void setGoodssImg(String goodssImg) {
-        this.goodsImg = goodssImg;
-    }
 
     public String getGoodsDetail() {
         return goodsDetail;

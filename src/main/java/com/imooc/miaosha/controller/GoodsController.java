@@ -1,5 +1,6 @@
 package com.imooc.miaosha.controller;
 
+import com.imooc.miaosha.domain.Goods;
 import com.imooc.miaosha.domain.MiaoshaUser;
 import com.imooc.miaosha.domain.User;
 import com.imooc.miaosha.redis.RedisService;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.thymeleaf.util.StringUtils;
@@ -45,9 +47,38 @@ public class GoodsController {
     public String list(Model model, MiaoshaUser miaoshaUser) {
         model.addAttribute("user", miaoshaUser);
         //查询商品列表
-        List<GoodsVo> goodsVos=goodsService.listGoodsVo();
-        model.addAttribute("goodsList",goodsVos);
+        List<GoodsVo> goodsVos = goodsService.listGoodsVo();
+        model.addAttribute("goodsList", goodsVos);
         return "goods_list";
+    }
+
+    @RequestMapping("/to_detail/{goodsId}")
+    public String detail(Model model, MiaoshaUser miaoshaUser,
+                         @PathVariable("goodsId") long goodsId) {
+        //snowflake 用于ID 有时间看
+        model.addAttribute("user",miaoshaUser);
+        GoodsVo goodsVo = goodsService.getGoodsByGoodsId(goodsId);
+        model.addAttribute("goods",goodsVo);
+        long startAt = goodsVo.getStartDate().getTime();
+        long endAt = goodsVo.getEndDate().getTime();
+        long now = System.currentTimeMillis();
+        int miaoshaStatus = 0;
+        int remainSeconds = 0;
+        if (now < startAt) {//秒杀没有开始
+            miaoshaStatus = 0;
+            remainSeconds = (int) ((startAt - now) / 1000);
+        } else if (now > endAt) {//已经结束
+            miaoshaStatus = 2;
+            remainSeconds = -1;
+        } else {
+            miaoshaStatus = 1;
+            remainSeconds = 0;
+        }
+        model.addAttribute("miaoshaStatus",miaoshaStatus);
+        model.addAttribute("remainSeconds",remainSeconds);
+
+        return "goods_detail";
+
     }
 
 }
