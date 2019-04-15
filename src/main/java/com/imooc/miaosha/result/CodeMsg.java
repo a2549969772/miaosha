@@ -13,6 +13,8 @@ public class CodeMsg {
     public static CodeMsg PASSWORD_ERROR = new CodeMsg(500204, "password is wrong");
     public static CodeMsg Bind_ERROR = new CodeMsg(500205, "Bind is wrong:%s");
 
+    public static CodeMsg MIAOSHA_OVER=new CodeMsg(500500,"商品秒杀完毕");
+    public static CodeMsg REPEATE_MIAOSHA=new CodeMsg(500501,"重复秒杀");
 
 
     private CodeMsg(int code, String msg) {
