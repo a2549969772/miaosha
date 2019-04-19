@@ -4,20 +4,10 @@
     <option name="showContexts" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4da4db5c-52bd-4bd8-b097-f3bc3c3fdb4d" name="Default Changelist" comment="普通的秒杀功能已实现，高并发未处理">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4da4db5c-52bd-4bd8-b097-f3bc3c3fdb4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/config/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/config/UserArgumentResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/imooc/miaosha/JedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imooc/miaosha/JedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/MainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/config/UserArgumentResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/config/UserArgumentResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/result/CodeMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/imooc/miaosha/JedisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/imooc/miaosha/JedisTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,8 +55,8 @@
           <entry key="java" value="11908" />
           <entry key="js" value="1" />
           <entry key="properties" value="161" />
-          <entry key="txt" value="92" />
-          <entry key="xml" value="112" />
+          <entry key="txt" value="97" />
+          <entry key="xml" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,9 +64,9 @@
           <entry key="HTML" value="845" />
           <entry key="JAVA" value="11908" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="100" />
+          <entry key="PLAIN_TEXT" value="105" />
           <entry key="Properties" value="161" />
-          <entry key="XML" value="112" />
+          <entry key="XML" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -127,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="187">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -175,11 +165,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="274">
+              <caret line="140" column="44" lean-forward="true" selection-start-line="140" selection-start-column="44" selection-end-line="140" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -197,7 +187,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/imooc/miaosha/JedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -244,6 +234,7 @@
       <find>orderInfo</find>
       <find>packaging</find>
       <find>maven-surefire-plugin</find>
+      <find>Te</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -304,9 +295,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/config/UserArgumentResolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imooc/miaosha/JedisTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java" />
       </list>
     </option>
   </component>
@@ -499,7 +490,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555590761680" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555661490793" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -610,8 +601,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JedisTest" />
         <item itemvalue="Spring Boot.MainApplication" />
+        <item itemvalue="Application.JedisTest" />
         <item itemvalue="Spring Boot.DemoController" />
         <item itemvalue="Application.ValidatorUtil" />
         <item itemvalue="Application.MD5Util" />
@@ -655,7 +646,7 @@
       <workItem from="1555483537759" duration="3890000" />
       <workItem from="1555576325163" duration="958000" />
       <workItem from="1555581594477" duration="8614000" />
-      <workItem from="1555657253268" duration="168000" />
+      <workItem from="1555657253268" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="goodsList1.0">
       <created>1554973288572</created>
@@ -692,11 +683,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555330818199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="打war包">
+      <created>1555657474409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555657474409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131963000" />
+    <option name="totallyTimeSpent" value="133566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -717,23 +715,23 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.20713201" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.20713201" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32849365" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32846716" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.32849365" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32846716" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.67384106" />
-      <window_info anchor="bottom" id="Spring" order="6" weight="0.3294893" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.3294893" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.21350364" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Spring" order="5" weight="0.3294893" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3294893" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.21350364" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.67384106" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32849365" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.72627735" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.72516555" />
       <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.3294702" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
@@ -793,7 +791,8 @@
     <MESSAGE value="goodsList1.0" />
     <MESSAGE value="关于thymeleaf无法访问静态页面的BUG已修复" />
     <MESSAGE value="普通的秒杀功能已实现，高并发未处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="普通的秒杀功能已实现，高并发未处理" />
+    <MESSAGE value="打war包" />
+    <option name="LAST_COMMIT_MESSAGE" value="打war包" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1096,13 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/config/UserArgumentResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -1151,14 +1143,21 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/imooc/miaosha/JedisTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="274">
+          <caret line="140" column="44" lean-forward="true" selection-start-line="140" selection-start-column="44" selection-end-line="140" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
