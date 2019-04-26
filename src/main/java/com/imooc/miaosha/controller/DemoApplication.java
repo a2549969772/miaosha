@@ -21,7 +21,7 @@ public class DemoApplication {
     @RequestMapping("/")
     @ResponseBody
     String home() {
-        return "hello spring";
+        return "hello 中文";
     }
 
     @RequestMapping("/hello")
