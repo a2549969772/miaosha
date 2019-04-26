@@ -12,23 +12,28 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import java.nio.charset.Charset;
 import java.util.List;
 
-@Configuration
-public class CustomMVCConfiguration extends WebMvcConfigurationSupport {
-    @Bean
-    public HttpMessageConverter<String> responseBodyConverter(){
-        StringHttpMessageConverter converter=new StringHttpMessageConverter(Charset.forName("UTF-8"));
-        return  converter;
-    }
-
-
-    @Override
-    protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        super.configureMessageConverters(converters);
-        converters.add(responseBodyConverter());
-    }
-
-    @Override
-    protected void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        configurer.favorPathExtension(false);
-    }
-}
+////@Configuration
+//public class CustomMVCConfiguration extends WebMvcConfigurationSupport {
+//    //@Bean
+////    public HttpMessageConverter<String> responseBodyConverter(){
+////        StringHttpMessageConverter converter=new StringHttpMessageConverter(Charset.forName("UTF-8"));
+////        return  converter;
+////    }
+//    //@Bean
+//    public HttpMessageConverter<String> responseBodyConverter(){
+//         StringHttpMessageConverter converter=new StringHttpMessageConverter(Charset.forName("UTF-8"));
+//         return converter;
+//    }
+//
+//
+//    //@Override
+//    protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//        converters.add(responseBodyConverter());
+//        super.configureMessageConverters(converters);
+//    }
+//
+//    //@Override
+//    protected void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
+//        configurer.favorPathExtension(false);
+//    }
+//}

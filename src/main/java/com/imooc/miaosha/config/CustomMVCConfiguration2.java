@@ -1,42 +1,20 @@
 package com.imooc.miaosha.config;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.util.ResourceUtils;
-import org.springframework.web.method.support.HandlerMethodArgumentResolver;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-
 import java.nio.charset.Charset;
 import java.util.List;
 
-
-@Configuration
-public class WebConfig extends WebMvcConfigurationSupport {
-    @Autowired
-    UserArgumentResolver userArgumentResolver;
-
-    @Override
-    protected void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-
-        argumentResolvers.add(userArgumentResolver);
-
-    }
-
-    //处理无法访问到静态文件的问题
-    @Override
-    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-
-        registry.addResourceHandler("/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/templates/");
-        registry.addResourceHandler("/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/static/");
-        super.addResourceHandlers(registry);
-    }
+//@Configuration
+public class CustomMVCConfiguration2 extends WebMvcConfigurationSupport {
+    //https://www.it399.com/blog/web/201805081017
     @Bean
     public HttpMessageConverter<String> responseBodyConverter(){
         StringHttpMessageConverter converter = new StringHttpMessageConverter(Charset.forName("UTF-8"));
@@ -62,4 +40,6 @@ public class WebConfig extends WebMvcConfigurationSupport {
         converters.add(messageConverter());
 
     }
+
+
 }

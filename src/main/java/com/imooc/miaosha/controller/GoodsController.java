@@ -53,7 +53,7 @@ public class GoodsController {
 //        model.addAttribute("user", miaoshaUser);
 //        return "goods_list";
 //    }
-    @RequestMapping(value = "/to_list", produces = "text/html;charset=utf-8")
+    @RequestMapping(value = "/to_list", produces = "text/html")
     @ResponseBody
     public String list(HttpServletRequest request, HttpServletResponse response, Model model, MiaoshaUser miaoshaUser) {
         model.addAttribute("user", miaoshaUser);
@@ -78,7 +78,7 @@ public class GoodsController {
 
     }
 
-    @RequestMapping(value = "/to_detail/{goodsId}", produces = "text/html;charset=utf-8")
+    @RequestMapping(value = "/to_detail/{goodsId}", produces = "text/html;")
     @ResponseBody
     public String redis_detail(HttpServletRequest request, HttpServletResponse response, Model model, MiaoshaUser miaoshaUser,
                                @PathVariable("goodsId") long goodsId) {
